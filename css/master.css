@@ -1,0 +1,512 @@
+/* ----------------------------------------
+                  RESET
+---------------------------------------- */
+
+body {
+  background: #c40000;
+  color: rgb(50, 50, 50);
+}
+figure {
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+
+/* ----------------------------------------
+                  HEADER
+---------------------------------------- */
+
+.block-header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0 0 20px;
+  margin-bottom: 3%;
+}
+.block-header .menu-logo .logo {
+  padding: 5% 0 5% 10%;
+}
+.block-header .menu-logo .logo > a > img {
+  width: 70%;
+}
+.block-header .menu-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.block-header .menu-nav > div {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+.block-header .menu-nav figure {
+  position: relative;
+}
+.block-header .menu-nav > div img {
+  width: 70%;
+}
+.block-header .menu-nav .text-menu {
+  background: white;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1% 0;
+}
+
+.block-header .lang-wrapper{
+  margin-left: -81px;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 50vh;
+  display: flex;
+  flex-flow: row nowrap;
+  transition-duration: 1s;
+}
+
+.block-header .lang-wrapper:hover{
+  margin-left: 0;
+  transition-duration: 1s;
+}
+
+.block-header .lang {
+  font-size: 14px;
+  background: white;
+  color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px;
+  height: 100px;
+  justify-content: space-around;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.block-header .lang .choisir{
+  border: none;
+  font-style: italic;
+  color: black;
+  width: 100%;
+}
+
+
+.block-header .lang .trad-title{
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 5px;
+  margin: -5px 0 0 -5px;
+}
+
+.block-header .flags{
+  margin: auto 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 5px 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  background: white;
+}
+
+.block-header .flags img{
+  max-height: 20px;
+  width: 30px;
+  overflow: hidden;
+  margin: 5px 0 5px 5px;
+}
+
+
+/* --------------------------------------------------
+                        CONTENT
+-------------------------------------------------- */
+
+/* -----------------------------------
+              ACCUEIL
+----------------------------------- */
+
+.content {
+  margin: 0 5%;
+}
+
+/* ---------- SEARCH ---------- */
+
+.search {
+  width: 100%;
+}
+.search > form {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+}
+.search > form > input {
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 2% 30% 2% 3%;
+  margin-bottom: 5%;
+}
+.search > form > input:first-child {
+  border-radius: 500px 0 0 500px;
+}
+.search > form > input:nth-child(2) {
+  width: 20px;
+  border-radius: 0 500px 500px 0;
+  border-left: 1px solid grey;
+  padding-right: 16%;
+}
+.search > form > input:nth-child(2):hover {
+  background: rgb(230, 230, 230);
+}
+
+.search > form > .category {
+  background: white;
+  border-radius: 50px;
+  padding: 15px;
+  margin-top: .5%;
+}
+
+.search > form > .category label {
+  color: black;
+  padding: 0 10px;
+}
+
+
+/* ---------- BLOCK-ACCUEIL ---------- */
+.block-accueil {
+  display: flex;
+  margin: 0 0 10% 0;
+}
+
+.block-accueil .description {
+  background: white;
+  width: 31%;
+  padding: 0 4% 3%;
+}
+.block-accueil .description .title {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 10% 0;
+}
+.block-accueil .description .text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+.block-accueil .description .discover {
+  color: grey;
+  font-size: 1.5rem;
+  border-bottom: 2px solid grey;
+  margin-right: 75%;
+}
+
+.block-accueil .apercu {
+  position: absolute;
+  right: 5%;
+  background: white;
+  width: 55%;
+  box-shadow: 0 0 20px;
+}
+.block-accueil .apercu .image {
+  padding: 4% 2%;
+}
+.block-accueil .apercu .image > img {
+  width: 100%;
+}.block-accueil .apercu .slider .nav-slider {
+
+}
+
+/* ---------- BLOCK-CATEGORIE ---------- */
+.block-categorie {
+  display: flex;
+  justify-content: space-between;
+}
+.block-categorie .categorie {
+  position: relative;
+  width: 49%;
+}
+.block-categorie .categorie > a > img {
+  width: 100%;
+}
+.block-categorie .categorie .inner {
+  background: rgb(0, 0, 0, 0.6);
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 60%;
+  font-size: 3rem;
+  text-align: center;
+  padding: 15% 10%;
+  margin: 10% 10%;
+}
+
+/* -----------------------------------
+              NOUVEAUTES
+----------------------------------- */
+
+.header-nouveautes {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- TITRE ---------- */
+.header-nouveautes .title-nouveautes {
+  background: white;
+  width: 15%;
+  box-shadow: 0 2px 20px;
+  margin: 2% 0 5% 0;
+  padding: 1% 5%;
+}
+.header-nouveautes .title-nouveautes .title {
+  font-size: 3rem;
+}
+
+/* ---------- SEARCH ---------- */
+.header-nouveautes .search > form {
+  width: 90%;
+  margin: 3.5% 0 0 10%;
+}
+.header-nouveautes .search > form > input:first-child {
+  width: 20%;
+  margin-left: 20%;
+}
+.header-nouveautes .search > form > input:nth-child(2) {
+  padding-right: 13%;
+}
+
+/* ---------- CATEGORY ---------- */
+.search {
+  position: relative;
+}
+.search .category {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.search .category label {
+  color: white;
+}
+
+/* ---------- BLOCK-LIST ---------- */
+.block-list {
+  margin-bottom: 5%;
+}
+.block-list .title {
+  color: white;
+  border-bottom: 2px solid white;
+  font-size: 2.5rem;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.block-list .nav-series > form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+}
+.block-list .nav-series > form > input {
+  background: transparent;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 1.3rem;
+  padding: 2% 3%;
+}
+.block-list .nav-series > form > input:hover {
+  background: white;
+  color: rgb(50, 50, 50);
+}
+.block-list .serie {
+  background: white;
+  display: flex;
+  box-shadow: 0 2px 20px;
+  margin-bottom: 3%;
+}
+.block-list .serie .description {
+  width: 55%;
+  padding: 3% 5%;
+}
+.block-list .serie .description > h3 {
+  font-size: 3rem;
+  margin-bottom: 4%;
+}
+.block-list .serie .description > p {
+  font-size: 1.5rem;
+}
+.block-list .serie .image {
+  width: 45%;
+  padding: 1% 1% .5%;
+  margin: auto;
+}
+.block-list .serie .image > img {
+  width: 100%;
+}
+
+/* ----------------------------------------
+              SERIES / ANIMES
+---------------------------------------- */
+
+.row {
+  margin: 30px auto;
+  width: 1200px;
+  background: #ad0c00;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
+}
+.poster {
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+  padding: 5px;
+}
+.poster .summary {
+  width: 250px;
+  margin-left: -270px;
+  padding: 20px 15px;
+  max-height: 350px;
+  transition-duration: 1s;
+  font-family: arial;
+  z-index: 1;
+  background: rgba(100, 100, 100, 0);
+  opacity: 0;
+  position: relative;
+}
+.poster .summary a {
+  margin-left: -35px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.poster:hover .summary {
+  margin-left: -5px;
+  transition-duration: 1s;
+  background: rgba(20, 20, 20, 0.8);
+  opacity: 1;
+}
+.poster img {
+  max-height: 400px;
+  padding: 0px 2px;
+  transition-duration: 1s;
+  z-index: 2;
+}
+.poster:hover img {
+  max-height: 420px;
+  transition-duration: 1s;
+}
+
+/* ----------------------------------------
+                  EPISODE
+---------------------------------------- */
+
+.block-episode {
+  display: flex;
+  margin: 5% 0;
+}
+.block-episode .next {
+  color: white;
+  width: 25%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 10% 0;
+}
+.block-episode .episode {
+  width: 50%;
+  box-shadow: 0 0 20px;
+}
+.block-episode .episode .lang {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+.block-episode .episode .lang > a {
+  width: 49.5%;
+}
+.block-episode .episode .lang > a > figure {
+  background: lightgrey;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.block-episode .episode .lang > a > figure > img {
+  width: 25%;
+  height: 75%;
+  margin: 2.5% 38% auto;
+}
+.block-episode .episode .title {
+  font-size: 2rem;
+  margin: 4% 2%;
+}
+.block-episode .episode .text {
+  margin: 2%;
+  font-size: 1.3rem;
+}
+.block-episode .episode .serie {
+  background: white;
+  padding: 2%;
+}
+.block-episode .episode .serie .image > img {
+  width: 100%;
+}
+.block-episode .episode .coulisses {
+  background: rgb(230, 230, 230);
+  padding: 2%;
+}
+
+/* ----------------------------------------
+                  FOOTER
+---------------------------------------- */
+
+.block-footer {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2% 0;
+  margin-top: 5%;
+}
+
+/* ----------------------------------------
+                  SCROLLBAR
+---------------------------------------- */
+
+::-webkit-scrollbar {
+  background: yellow;
+  width: 10px;
+  height: 0px;
+  padding-bottom: 2%;
+  position: absolute;
+  top: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ad0c00;
+}
+::-webkit-scrollbar-corner {
+  display: none;
+}
